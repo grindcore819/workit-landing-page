@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope/static/Manrope-Regular.ttf');
+    src: url('assets/fonts/manrope/Manrope-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf');
+    src: url('assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf')
+}
+
+header{
+    width: 100%;
+    background: #24053E;
+    color: #FFFFFF;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+}
+
+nav{
+    display: flex;
+    padding-left: clamp(16px, 11vw, 165px);
+    padding-right: clamp(16px, 11vw, 165px);
+    padding-top: clamp(32px, 5vh, 57px);
+    justify-content: space-between;
+}
+
+nav > div:last-child {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    border-bottom: 3px solid #44FFA1;;
+}
+
+.image-hero{
+    width: clamp(320px, 53vw ,767px);
+    height: clamp(184px, 40vw, 441px);
+}
+
+.container > div > img {
+    width: 477px;
+    height: 477px;
+}
+
+.main-title {
+    font-family: 'Fraunces 144pt';
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 64px;
+}
+
+button {
+    height: clamp(55px, 3vh, 61px);
+    background: #44FFA1;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #24053E;
+}
+
+.bg-pattern-1{
+    position: absolute;
+}
+
+.bg-pattern-2{
+    position: absolute;
+}
+.image-hero{
+    transform: translate(35vw, 20vh);
+}
+
+.list{
+    padding-top: 250px;
+    text-align: center;
+    padding-left: clamp(16px, 8.5vw, 165px);
+    padding-right: clamp(16px, 8.5vw, 165px);
+}
+
+.round{
+    border: 1px solid #584D62;
+    border-radius: 30.5px;
+    height: 56px;
+    width: 56px;
+    margin-top: auto;
+
+    font-family: 'Fraunces 144pt';
+    font-style: normal;
+    font-weight: 600;
+    /* Dark Purple */
+    color: #24053E;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item > h3 {
+    color: #24053E;
+    font-family: 'Fraunces 144pt';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.item > p {
+    color: #24053E;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.container{
+    padding-top: clamp(100px, 11vh, 110px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card{
+    background: #24053E;
+    color: #FFFFFF;
+    padding-top: clamp(32px, 6vh, 64px);
+    padding-left: clamp(32px, 3vh, 64px);
+    padding-right: clamp(32px, 3vh, 64px);
+}
+
+.card > h1 {
+    font-family: 'Fraunces 144pt';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.card > p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; /* set a fixed height for each row */
+}
+
+.row > div {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 116px;
+}
+
+.row:first-child > div{
+    justify-content: center;
+}
+
+
+
+@media (min-width:320px) and (max-width: 599px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .container > div > img {
+        width: 281px;
+        height: 281px;
+    }
+
+    nav > div:last-child{
+        font-size: 16px;
+    }
+
+    .main-title{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .main-title > div {
+        width: 91vw;
+        padding-left: calc((100% - 91vw) / 2);
+    }
+
+    .bg-pattern-1{
+        display: none;
+    }
+    
+    .bg-pattern-2{
+        display: none;
+    }
+
+    .round{
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .item > h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .item > p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .container{
+        width: 91vw;        
+    }
+
+    .card > h1 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .card > p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .card > button {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .card > img {
+        width: 281px;
+        height: 281px;
+    }
+}
+
+
+@media (min-width:600px) and (max-width: 1024px) { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .container > div > img {
+        width: 281px;
+        height: 281px;
+    }
+
+    nav > div:last-child{
+        font-size: 16px;
+    }
+
+    .main-title{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .main-title > div {
+        width: 74vw;
+        padding-left: calc((100% - 74vw) / 2);
+    }
+
+    .bg-pattern-1{
+        display: absolute;
+    }
+    
+    .bg-pattern-2{
+        display: absolute;
+    }
+
+    .round{
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .item > h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .item > p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .container{
+        width: 91vw;
+    }
+
+    .card{
+        width: 55vw;
+        height: 25vh;
+        position: relative;
+        left: 22vw;
+        top: -12vh;
+    }
+
+    .card > h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .card > p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .card > button {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .card > img {
+        width: 281px;
+        height: 281px;
+    }
+}
+
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */
+    .main-title{
+        font-size: 80px;
+        line-height: 80px;
+    }
+    
+    .main-title > div {
+        width: 74vw;
+    }
+
+    .main-title > div {
+        width: 44vw;
+        padding-left: calc((100% - 44vw) / 2);
+    }
+
+    .bg-pattern-1{
+        left: -110px;
+    }
+    
+    .bg-pattern-2{
+        right: 0px;
+    }
+
+    .list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .round{
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .item > h3 {
+        font-size: 32px;
+        line-height: 40px;
+        padding-top: 56px;
+    }
+
+    .item > p {
+        font-size: 18px;
+        line-height: 32px;
+        padding-top: 28px;
+        max-width: 354px;
+    }
+
+    .container{
+        width: 57vw;
+    }
+
+    .card{
+        width: 38vw;
+        height: 38vh;
+        text-align: left;
+        position: relative;
+        top: -300px;
+        left: 390px;
+    }
+
+    .card > h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .card > p {
+        font-size: 18px;
+        line-height: 32px;        
+    }
+
+    .card > button {
+        margin-top: 32px;
+    }
+
+    .card > img {
+        width: 477px;
+        height: 477px;
+    }
+}
