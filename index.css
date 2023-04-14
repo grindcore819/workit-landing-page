@@ -41,6 +41,26 @@ nav > div:last-child {
     border-bottom: 3px solid #44FFA1;;
 }
 
+nav > div:last-child:hover {
+    color: #44FFA1;
+}
+
+button{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #24053E;
+    background: #44FFA1;
+}
+
+button:active{
+    border: 2px solid #44FFA1;
+    background: #24053E;
+    color: #44FFA1;
+}
+
 .image-hero{
     width: clamp(320px, 53vw ,767px);
     height: clamp(184px, 40vw, 441px);
@@ -59,17 +79,10 @@ nav > div:last-child {
     padding-top: 64px;
 }
 
-button {
-    height: clamp(55px, 3vh, 61px);
-    background: #44FFA1;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
-    letter-spacing: -0.18px;
-    color: #24053E;
+.main-title > div > span{
+    text-decoration: underline;
+    text-decoration-color: #44FFA1;
+    text-decoration-thickness: 0.05em;
 }
 
 .bg-pattern-1{
@@ -97,14 +110,16 @@ button {
     height: 56px;
     width: 56px;
     margin-top: auto;
-
     font-family: 'Fraunces 144pt';
     font-style: normal;
     font-weight: 600;
-    /* Dark Purple */
     color: #24053E;
     margin-left: auto;
     margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item > h3 {
@@ -191,6 +206,14 @@ footer{
         line-height: 50px;
     }
 
+    .main-title > button{
+        width:133px;
+        height: 55px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
     .main-title > div {
         width: 91vw;
         padding-left: calc((100% - 91vw) / 2);
@@ -231,6 +254,14 @@ footer{
         position: relative;
         top: -55px;
         text-align: center;
+    }
+
+    .card > button {
+        width: 172px;
+        height: 55px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
     }
 
     .card > h1 {
@@ -277,6 +308,14 @@ footer{
         line-height: 60px;
     }
 
+    .main-title > button{
+        width:133px;
+        height: 55px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
     .main-title > div {
         width: 74vw;
         padding-left: calc((100% - 74vw) / 2);
@@ -287,7 +326,7 @@ footer{
     }
     
     .bg-pattern-2{
-        right: -50px;
+        right: 0px;
         top: 300px;
     }
 
@@ -348,6 +387,8 @@ footer{
         margin-top: 24px;
         font-size: 16px;
         line-height: 32px;
+        width: 172px;
+        height: 55px;
     }
 
     .card > img {
@@ -366,14 +407,22 @@ footer{
         font-size: 80px;
         line-height: 80px;
     }
+
+    .main-title > button{
+        width: 161px;
+        height: 61px;
+        font-size: 18px;
+        line-height: 32px;
+        /* identical to box height, or 178% */
+    }
     
     .main-title > div {
         width: 74vw;
     }
 
     .main-title > div {
-        width: 44vw;
-        padding-left: calc((100% - 44vw) / 2);
+        width: 37vw;
+        padding-left: calc((100% - 37vw) / 2);
     }
 
     .bg-pattern-1{
@@ -439,6 +488,10 @@ footer{
 
     .card > button {
         margin-top: 32px;
+        width: 190px;
+        height: 61px;
+        font-size: 18px;
+        line-height: 32px;
     }
 
     .image-hero{
